@@ -8,13 +8,13 @@
     <title>Devcrvft Portfolio</title>
 </head>
 
-
+<body>
 <div id="app">
-    <header id="main-heading">
+    <header class="main-heading">
         <h1>Devcrvft Portfolio</h1>
         <nav>
             <!--  router-link component for navigation. -->
-            <router-link to="/Home">Home</router-link>
+            <router-link to="/#">Home</router-link>
             <router-link to="/portfolio">Portfolio</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/contact">Contact</router-link>
@@ -25,10 +25,15 @@
     <router-view></router-view>
 </div>
 
-
 <template id="home-component-template">
     <div>
+        <div class="home">
         <h2>Home</h2>
+        <section class="home-section">
+        <p>Hello, welcome to my Portfolio page. This page will house my projects I work on and also be a testing ground for anything new and cool I want to try out. Thanks for checking it out!
+            -Anthony Blanton</p>
+        </section>
+        </div>
     </div>
 </template>
 
@@ -52,23 +57,18 @@
         <p>links to social </p>
     </div>
 </template>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-<script src="js/main.js"></script>
-
+<script src="js/routes.js"></script>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
