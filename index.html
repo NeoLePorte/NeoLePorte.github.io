@@ -3,72 +3,64 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Devcrvft Portfolio</title>
 </head>
 
 <body>
-<div id="app">
-    <header class="main-heading">
-        <h1>Devcrvft Portfolio</h1>
-        <nav>
-            <!--  router-link component for navigation. -->
-            <router-link to="/#">Home</router-link>
-            <router-link to="/portfolio">Portfolio</router-link>
-            <router-link to="/about">About</router-link>
-            <router-link to="/contact">Contact</router-link>
-        </nav>
-    </header>
-    <!-- route outlet -->
-    <!-- component matched by the route will render here -->
-    <router-view></router-view>
-</div>
+    <div id="app">
+        <header class="main-heading">
+            <h1>Devcrvft Portfolio</h1>
+            <nav>
+                <!--  router-link component for navigation. -->
+                <router-link to="/#">Home</router-link>
+                <router-link to="/portfolio">Projects</router-link>
+                <router-link to="/about">About</router-link>
+                <router-link to="/contact">Contact</router-link>
+            </nav>
+        </header>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+    </div>
 
-<template id="home-component-template">
+    <template id="home-component-template">
     <div>
         <div class="home">
-        <h2>Home</h2>
         <section class="home-section">
         <p>Hello, welcome to my Portfolio page. This page will house my projects I work on and also be a testing ground for anything new and cool I want to try out. Thanks for checking it out!
-            -Anthony Blanton</p>
         </section>
         </div>
     </div>
 </template>
 
-<template id="portfolio-component-template">
+    <template id="portfolio-component-template">
     <div>
-        <h2>portfolio</h2>
-        <p> </p>
+        <h2>Projects</h2>
+        <div id="app">
+  <main>
+  <main>
     </div>
-</template>
+    </template>
 
-<template id="about-component-template">
+    <template id="about-component-template">
     <div>
         <h2>About me</h2>
         <p>Hello! My name is Anthony. </p>
     </div>
 </template>
 
-<template id="contact-component-template">
+    <template id="contact-component-template">
     <div>
         <h2>Contact</h2>
         <p>links to social </p>
     </div>
 </template>
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-<script src="js/routes.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="js/routes.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
