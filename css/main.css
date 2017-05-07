@@ -34,7 +34,7 @@ nav {
 }
 
 .main-heading h1 {
-    animation: neon1 1.5s ease-in-out infinite alternate;
+    margin-left: 10px;
 }
 
 nav {
