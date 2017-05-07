@@ -1,11 +1,13 @@
 * {
     background-color: #2F2727;
-    /*background-image: url();*/
+    background-image: url(img/397989.jpg);
     /*background-position: center center;*/
     background-repeat: no-repeat;
 }
 
+
 /*---------heading/nav-------*/
+
 .main-heading {
     display: -webkit-box;
     display: -moz-box;
@@ -22,7 +24,6 @@
     -webkit-box-shadow: 1px 1px transparent;
     box-shadow: 1px 1px transparent;
     background: #1a1a1a;
-    background: 
 }
 
 .main-heading h1,
@@ -30,11 +31,10 @@ nav {
     font-family: 'Ubuntu Condensed', sans-serif;
     background: inherit;
     align-self: center;
-
 }
 
 .main-heading h1 {
-    animation: neon3 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 nav {
@@ -50,19 +50,18 @@ nav a {
     font-size: 1.3em;
 }
 
+
 /*-----------------------------General---------------------------------------*/
 
-html,body,#app {
-               
-    position:fixed;
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-
-    }
-
-
+html,
+body,
+#app {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
 
 .home,
 .projects,
@@ -71,12 +70,11 @@ html,body,#app {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-bottom: 100%;
+    padding-bottom: 150%;
     padding-top: 0;
     color: ivory;
     background: #10053d;
 }
-
 
 .home-section,
 .projects-section,
@@ -103,9 +101,10 @@ html,body,#app {
 }
 
 .home p {
-    padding-top:29%;
+    padding-top: 29%;
     font-family: 'Inconsolata', monospace;
 }
+
 
 /*-----------------Projects---------------*/
 
@@ -120,16 +119,14 @@ html,body,#app {
     background: inherit;
     justify-content: space-between;
     margin: auto;
-
 }
 
 .projects-section li {
     text-decoration: none;
     background: inherit;
-    color:#f02c11;
+    color: #f02c11;
     border: solid 2px black;
 }
-
 
 
 /*-----------------About---------------*/
@@ -138,46 +135,31 @@ html,body,#app {
     background: #f02c11;
 }
 
+
 /*-----------------contact---------------*/
+
 .contact {
     background: #208075;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------footer-------*/
+
 footer {
     color: palegoldenrod;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: inherit;
 }
 
 @media(min-width: 1600px) {
     .home-section,
-     .projects-section,
+    .projects-section,
     .about-section,
     .contact-section {
         max-width: 50%;
     }
-
-
-    
     nav {
         margin-left: 62%;
         padding-left: 1em;
@@ -187,19 +169,7 @@ footer {
     nav a {
         margin-left: 1em;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @-webkit-keyframes neon1 {
     from {
@@ -252,5 +222,37 @@ footer {
     }
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+}
+
+.bounce-enter-active {
+    animation: bounce-in .5s;
+}
+
+.bounce-leave-active {
+    animation: bounce-out .5s;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0);
     }
 }
