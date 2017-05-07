@@ -1,7 +1,5 @@
 //  Defined route components.
-const AboutComponent = Vue.extend({
-    template: "#about-component-template"
-});
+const AboutComponent = { template: "#about-component-template" }
 const PortfolioComponent = { template: '#portfolio-component-template' }
 const HomeComponent = { template: '#home-component-template' }
 const ContactComponent = { template: '#contact-component-template' }
@@ -20,7 +18,16 @@ const router = new VueRouter({
     routes // short for routes: routes
 })
 
+
+
 // Mounts router
 const app = new Vue({
-    router
+    router,
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else {
+            return { x: 0, y: 0 }
+        }
+    }
 }).$mount('#app')
