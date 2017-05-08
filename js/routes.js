@@ -1,6 +1,35 @@
 //  Defined route components.
 const AboutComponent = { template: "#about-component-template" }
-const PortfolioComponent = { template: '#portfolio-component-template' }
+
+const PortfolioComponent = { template: '#portfolio-component-template',
+  data () {
+    return {
+      loading: false,
+      post: null,
+      error: null,
+    }
+  },
+  created () {
+    // fetch the data when the view is created and the data is
+    // already being observed
+    this.fetchData()
+  },
+  methods: {
+    fetchData () {
+      this.$http.get('http://cpv2api.com/pens/public/bvsscrvft',).then(response => {
+
+    // get body data
+    this.someData = response.body;
+    let stuff = this.someData;
+    console.log(stuff.data[1]);
+
+  }, response => {
+    // error callback
+  });
+  }
+ }
+}
+
 const HomeComponent = { template: '#home-component-template' }
 const ContactComponent = { template: '#contact-component-template' }
 
