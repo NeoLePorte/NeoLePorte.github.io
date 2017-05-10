@@ -21,7 +21,7 @@ const PortfolioComponent = { template: '#portfolio-component-template',
     // get body data
     this.someData = response.body;
     let stuff = this.someData;
-    console.log(stuff.data[1]);
+    console.log(stuff.data);
 
   }, response => {
     // error callback
