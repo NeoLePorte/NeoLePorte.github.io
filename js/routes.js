@@ -16,7 +16,7 @@ const PortfolioComponent = { template: '#portfolio-component-template',
   },
   methods: {
     fetchData () {
-      this.$http.get('http://cpv2api.com/pens/public/bvsscrvft',).then(response => {
+      this.$http.get('http://cpv2api.com/pens/public/bvsscrvft').then(response => {
 
     // get body data
     this.someData = response.body;
