@@ -35,7 +35,6 @@ nav {
 
 .main-heading h1 {
     margin-left: 10px;
-    color: tomato;
 }
 
 nav {
@@ -98,7 +97,7 @@ body,
 /*-----------------Home---------------*/
 
 .home p,
-.projects h1,
+.projects p,
 .about p,
 .contact p {
     background: inherit;
@@ -114,37 +113,23 @@ body,
 /*-----------------Projects---------------*/
 
 .projects {
-    display: flex;
-    flex-direction: column;
     background: #1a1a1a;
 }
 
-
-.projects ul {
+.projects-section ul {
     display: flex;
-    flex-direction: column;s
+    flex-direction: row;
     list-style: none;
     background: inherit;
     justify-content: space-between;
-    margin: 0 auto;
-    font-size: 1.5em;
+    margin: auto;
 }
 
-.projects a,
-.projects span
- {
-    color: tomato;
-    background: inherit;
-    text-decoration: none;
-}
-
-
-
-.projects li {
+.projects-section li {
     text-decoration: none;
     background: inherit;
     color: #f02c11;
-    /*border: solid 2px black;*/
+    border: solid 2px black;
 }
 
 
