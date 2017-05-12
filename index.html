@@ -2,94 +2,23 @@
 <html>
 
 <head>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
     <title>Devcrvft Portfolio</title>
 </head>
 
-<body>
-    <div id="app">
-        <header class="main-heading">
-            <h1>Devcrvft Portfolio</h1>
-            <nav>
-                <!--  router-link component for navigation. -->
-                <router-link to="/#">Home</router-link>
-                <router-link to="/portfolio">Projects</router-link>
-                <router-link to="/about">About</router-link>
-                <router-link to="/contact">Contact</router-link>
-            </nav>
-        </header>
-        <!-- route outlet -->
-        <!-- component matched by the route will render here -->
-        <!--<transition-group name="custom-classes-transition" leave-active-class="rotateOut">-->
-        <router-view></router-view>
-        <!--</transition-group>-->
-    </div>
-    <template id="home-component-template">
-        <transition  name="custom-classes-transition" enter-active-class="animated fadeInLeft" leave-active-class="fadeOutUpBig" >
-    <div>
-        <div class="home">
-        <section class="home-section">
-        <p>Hello, welcome to my Portfolio page. This page will house my projects I work on and also be a testing ground for anything new and cool I want to try out. Thanks for checking it out!</p>
-        </section>
-        </div>
-    </div>
-        </transition>
-</template>
 
-    <template id="portfolio-component-template">
-       <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
-    <div>
-      <div class="projects">
-        <section class="projects-section">
-        <h1>PROJECTS</h1>
-        <!--<p>{{message}}</p>-->
-        </section>
-        <template>
-    </div>
-  </div>
-</template>
-        
-        </div>
-        
-        
-    </div>
-        </transition>
-    </template>
+<!--<body>-->
+<div id="app"></div>
+<script src="bundle.js"></script>
 
-    <template id="about-component-template">
-        <transition name="custom-classes-transition" enter-active-class="animated fadeInLeft" leave-active-class="fadeInUpBig" >
-    <div>
-        <div class="about">
-        <section class="about-section">
-        <p>ABOUT ME</p>
-        
-        </section>
-        </div>
-    </div>
-        </transition>
-</template>
 
-    <template id="contact-component-template">
-        <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" leave-active-class="fadeInUpBig" >
-    <div>
-       <div class="contact">
-        <section class="contact-section">
-        <p>CONTACT INF/SOCIAL LINKS</p>
-        
-        </section>
-        </div>
-    </div>
-        </transition>
-</template>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
-    <script src="https://cdn.jsdelivr.net/vue.resource/1.3.1/vue-resource.min.js"></script>
-    <script src="js/routes.js"></script>
-</body>
+
+<!--</body>-->
 
 </html>
