@@ -6,7 +6,7 @@ import Projects from './Projects.vue'
 import Contact from './Contact.vue'
 import Home from './Home.vue'
 
-
+Vue.use(VueRouter);
 
 // Defined routes
 
@@ -17,7 +17,7 @@ const routes = [
     { path: '/contact', component: Contact }
 ]
 
-// initiates router
+//initiates router
 const router = new VueRouter({
     name: router,
     routes // short for routes: routes
@@ -25,6 +25,6 @@ const router = new VueRouter({
 
 
 const app = new Vue({
-    router,
+    router: router,
     render: h => h(App)
 }).$mount('#app')
