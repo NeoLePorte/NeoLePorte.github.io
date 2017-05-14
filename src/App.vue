@@ -5,7 +5,7 @@
         <nav>
             <!--  router-link component for navigation. -->
             <router-link to="/#">Home</router-link>
-            <router-link to="/portfolio">Projects</router-link>
+            <router-link to="/Projects">Projects</router-link>
             <router-link to="/about">About</router-link>
             <router-link to="/contact">Contact</router-link>
         </nav>
