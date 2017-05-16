@@ -132,6 +132,30 @@ body,
     border: solid 2px black;
 }
 
+.cp_embed_wrapper {
+    display: flex;
+    background: inherit;
+    margin-left: 2em;
+    overflow: hidden;
+  /* make resizeble! */
+  resize: both;
+  /* required to see the handle */
+  background: white;
+  padding-bottom: 10px;
+  /* default height */
+  height: 400px;
+}
+.cp_embed_wrapper iframe {
+  height: 100% !important;
+}
+
+.pens {
+    background: inherit;
+    display: flex;
+    align-self: left;
+    margin: auto;
+}
+
 
 /*-----------------About---------------*/
 
