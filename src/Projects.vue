@@ -14,12 +14,12 @@
         </div>
     </div>   
 </div>
-        </transition>
-    </template>
+</transition>
+</template>
 
-    <script>
+<script>
      
 export default {
       template: '#projects-component-template'
     }    
-</script>
+    </script>
