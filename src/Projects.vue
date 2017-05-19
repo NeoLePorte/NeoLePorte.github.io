@@ -18,8 +18,7 @@
     </template>
 
     <script>
-     
 export default {
-      template: '#projects-component-template'
+        template: '#projects-component-template'
     }    
 </script>
