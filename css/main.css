@@ -35,6 +35,7 @@ nav {
 
 .main-heading h1 {
     margin-left: 10px;
+    color: tomato;
 }
 
 nav {
@@ -93,6 +94,10 @@ body,
     padding: 25px;
 }
 
+body {
+    margin: 0;
+}
+
 
 /*-----------------Home---------------*/
 
@@ -137,22 +142,24 @@ body,
     background: inherit;
     margin-left: 2em;
     overflow: hidden;
-  /* make resizeble! */
-  resize: both;
-  /* required to see the handle */
-  background: white;
-  padding-bottom: 10px;
-  /* default height */
-  height: 400px;
+    /* make resizeble! */
+    resize: both;
+    /* required to see the handle */
+    background: white;
+    padding-bottom: 10px;
+    /* default height */
+    height: 400px;
 }
+
 .cp_embed_wrapper iframe {
-  height: 100% !important;
+    height: 100% !important;
 }
 
 .pens {
+    max-width: 80%;
+    padding: 2rem 5rem;
     background: inherit;
     display: flex;
-    align-self: left;
     margin: auto;
 }
 
