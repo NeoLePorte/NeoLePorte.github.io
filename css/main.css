@@ -1,8 +1,13 @@
-* {
+*,
+*:before,
+*::after {
     background-color: #2F2727;
     background-image: url(img/397989.jpg);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     /*background-position: center center;*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;*/
 }
 
 
@@ -34,7 +39,7 @@ nav {
 }
 
 .main-heading h1 {
-    margin-left: 10px;
+    margin: 20px 0 5px 10px;
     color: tomato;
 }
 
@@ -61,11 +66,8 @@ nav a:hover {
 html,
 body,
 #app {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .home,
@@ -78,7 +80,7 @@ body,
     padding-bottom: 150%;
     padding-top: 0;
     color: ivory;
-    background: #10053d;
+    background: inherit;
 }
 
 .home-section,
@@ -89,7 +91,6 @@ body,
     font-size: 24px;
     margin: 0 auto;
     background: inherit;
-    max-width: 80%;
     /*border: solid 2px transparent;*/
     padding: 25px;
 }
@@ -100,6 +101,10 @@ body {
 
 
 /*-----------------Home---------------*/
+
+.home {
+    background: #330066;
+}
 
 .home p,
 .projects p,
@@ -112,56 +117,11 @@ body {
 .home p {
     padding-top: 29%;
     font-family: 'Inconsolata', monospace;
+    color: ivory;
 }
 
 
 /*-----------------Projects---------------*/
-
-.projects {
-    background: #1a1a1a;
-}
-
-.projects-section ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    background: inherit;
-    justify-content: space-between;
-    margin: auto;
-}
-
-.projects-section li {
-    text-decoration: none;
-    background: inherit;
-    color: #f02c11;
-    border: solid 2px black;
-}
-
-.cp_embed_wrapper {
-    display: flex;
-    background: inherit;
-    margin-left: 2em;
-    overflow: hidden;
-    /* make resizeble! */
-    resize: both;
-    /* required to see the handle */
-    background: white;
-    padding-bottom: 10px;
-    /* default height */
-    height: 400px;
-}
-
-.cp_embed_wrapper iframe {
-    height: 100% !important;
-}
-
-.pens {
-    max-width: 80%;
-    padding: 2rem 5rem;
-    background: inherit;
-    display: flex;
-    margin: auto;
-}
 
 
 /*-----------------About---------------*/
@@ -172,10 +132,6 @@ body {
 
 
 /*-----------------contact---------------*/
-
-.contact {
-    background: #208075;
-}
 
 
 /*---------footer-------*/
