@@ -3,8 +3,11 @@
     <div>
         <div class="about">
         <section class="about-section">
+        <div class="about">
         <p>ABOUT ME</p>
-        
+        <p>My name is Anthony Blanton. 
+        </p>
+        </div>
         </section>
         </div>
     </div>

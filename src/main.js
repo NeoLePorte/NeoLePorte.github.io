@@ -6,7 +6,8 @@ import Projects from './Projects.vue'
 import Contact from './Contact.vue'
 import Home from './Home.vue'
 
-Vue.use(VueRouter);
+
+Vue.use(VueRouter)
 
 // Defined routes
 

@@ -3,7 +3,9 @@
     <div>
         <div class="home">
         <section class="home-section">
+        <div class="home">
         <p>Hello, welcome to my Portfolio page. This page will house my projects I work on and also be a testing ground for anything new and cool I want to try out. Thanks for checking it out!</p>
+        </div>
         </section>
         </div>
     </div>
@@ -15,3 +17,5 @@ export default {
         template: '#home-component-template'
         }    
 </script>
+
+    
