@@ -20,24 +20,10 @@
           <textarea id="comment" name="comments"></textarea>
           <label for="reason">Reason for contact:</label>
           <select id="job" name="contact_reason">
-            <optgroup label="Web">
-              <option value="frontend_developer">Front-End Developer</option>
-              <option value="python_developer">Python</option>
-              <option value="php_developer">PHP</option>
-              <option value="rails_developer">Rails Developer</option>
-              <option value="web_designer">Web Designer</option>
-              <option value="wordpress_developer">Wordpress Developer</option>
-            </optgroup>
-            
-              <optgroup label="Mobile">
-              <option value="android_developer">Android Developer</option>
-              <option value="ios_developer">ios Developer</option>
-              <option value="mobile_designer">Mobile Designer</option>
-            </optgroup>
-            
-            <optgroup label="Business">
-            <option value="buisness_owner">Buisness Owner</option>
-            <option value="freelancer">Freelancer</option>
+            <optgroup label="Reason for contact">
+              <option value="business">Business</option>
+              <option value="comment">Comment</option>
+              <option value="to-say-hi">To say hi</option>
           </optgroup>
           </select>
         </fieldset>
