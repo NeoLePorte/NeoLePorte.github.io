@@ -1,13 +1,8 @@
-*,
-*:before,
-*::after {
+* {
     background-color: #2F2727;
     background-image: url(img/397989.jpg);
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     /*background-position: center center;*/
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 
 
@@ -31,16 +26,18 @@
     background: #1a1a1a;
 }
 
+
+
 .main-heading h1,
 nav {
     font-family: 'Ubuntu Condensed', sans-serif;
     background: inherit;
     align-self: center;
+    color: #bada55;
 }
 
 .main-heading h1 {
-    margin: 20px 0 5px 10px;
-    color: tomato;
+    margin-left: 10px;
 }
 
 nav {
@@ -63,12 +60,15 @@ nav a:hover {
 
 /*-----------------------------General---------------------------------------*/
 
-html,
+/*html,
 body,
 #app {
-    display: flex;
-    flex-direction: column;
-}
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}*/
 
 .home,
 .projects,
@@ -80,7 +80,7 @@ body,
     padding-bottom: 150%;
     padding-top: 0;
     color: ivory;
-    background: inherit;
+    background: #10053d;
 }
 
 .home-section,
@@ -91,20 +91,13 @@ body,
     font-size: 24px;
     margin: 0 auto;
     background: inherit;
+    max-width: 80%;
     /*border: solid 2px transparent;*/
     padding: 25px;
 }
 
-body {
-    margin: 0;
-}
-
 
 /*-----------------Home---------------*/
-
-.home {
-    background: #330066;
-}
 
 .home p,
 .projects p,
@@ -117,11 +110,55 @@ body {
 .home p {
     padding-top: 29%;
     font-family: 'Inconsolata', monospace;
-    color: ivory;
 }
 
 
 /*-----------------Projects---------------*/
+
+.projects {
+    background: #1a1a1a;
+}
+
+.projects-section ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background: inherit;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.projects-section li {
+    text-decoration: none;
+    background: inherit;
+    color: #f02c11;
+    border: solid 2px black;
+}
+
+
+.cp_embed_wrapper {
+    display: flex;
+    background: inherit;
+    margin-left: 2em;
+    overflow: hidden;
+  /* make resizeble! */
+  resize: both;
+  /* required to see the handle */
+  background: ivory;
+  padding-bottom: 10px;
+  /* default height */
+  height: 400px;
+}
+.cp_embed_wrapper iframe {
+  height: 100% !important;
+}
+
+.pens {
+    background: inherit;
+    display: flex;
+    align-self: left;
+    margin: auto;
+}
 
 
 /*-----------------About---------------*/
@@ -132,6 +169,10 @@ body {
 
 
 /*-----------------contact---------------*/
+
+.contact {
+    background: #208075;
+}
 
 
 /*---------footer-------*/
