@@ -5,6 +5,10 @@
     background-repeat: no-repeat;
 }
 
+body {
+    margin:0;
+}
+
 
 /*---------heading/nav-------*/
 
