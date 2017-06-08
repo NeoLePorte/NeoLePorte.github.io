@@ -1,5 +1,5 @@
 <template id="contact-component-template">
-        <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" leave-active-class="fadeInUpBig" >
+        <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOut" >
     <div>
         <div class="contact">
         <section class="contact-section">
@@ -18,17 +18,17 @@
         <fieldset>   
           <label for="comment">Comments:</label>
           <textarea id="comment" name="comments"></textarea>
-          <label for="reason">Reason for contact:</label>
+          <!--<label for="reason">Reason for contact:</label>
           <select id="job" name="contact_reason">
             <optgroup label="Reason for contact">
               <option value="business">Business</option>
               <option value="comment">Comment</option>
               <option value="to-say-hi">To say hi</option>
           </optgroup>
-          </select>
+          </select>-->
         </fieldset>
         
-        <button type="submit">SUBMIT</button>
+        <button class="submit" >Submit</button>
       </form>
       </div>
         </section>
@@ -46,7 +46,7 @@ export default {
 <style>
   
 .contact {
-    background: #294936;
+    background: rgba(56, 0, 0, 0.6);
     font-family: 'Nunito', sans-serif;
 }
 
@@ -55,20 +55,21 @@ export default {
   flex-direction: column;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #212922;
+  background: rgb(16, 9, 11);
   border-radius: 8px;
+  color: ivory;
 }
+
 
 
 h1 {
   margin: 0 0 30px 0;
   text-align: center;
-  background:inherit;
 }
 
 fieldset > label {
   background: inherit;
-  color: #001;
+  color: ivory;
   text-weight: 400;
 }
 
@@ -96,7 +97,7 @@ select {
   border-radius: 2px;
 }
 
-button {
+.submit {
   padding: 19px 39px 18px 39px;
   color: #FFF;
   background: #330066;

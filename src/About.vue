@@ -1,14 +1,12 @@
 <template id="about-component-template">
-        <transition name="custom-classes-transition" enter-active-class="animated fadeInLeft" leave-active-class="fadeInUpBig" >
+        <transition name="custom-classes-transition" enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOut" >
     <div>
         <div class="about">
         <section class="about-section">
-        <div class="about">
         <p>ABOUT ME</p>
-        <p>My name is Anthony Blanton. 
-        </p>
-        </div>
         </section>
+         <p>My name is Anthony Blanton. 
+        </p>
         </div>
     </div>
         </transition>
@@ -20,3 +18,9 @@ export default {
         template: "#about-component-template"
         }    
 </script>
+
+<style>
+    .about {
+    background: rgba(26,27,37,0.7)
+}
+</style>

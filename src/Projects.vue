@@ -1,16 +1,21 @@
 <template id="projects-component-template">
-    <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
+    <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" leave-active-class="animated fadeOut" > 
     <div>
         <div class="projects">
         <section class="projects-section">
         <p>PROJECTS</p>
         </section>
-           <div class="pens">
-        <iframe id="cp_embed_EWXBEg" src="https://codepen.io/bvsscrvft/embed/preview/EWXBEg?height=265&amp;theme-id=0&amp;slug-hash=EWXBEg&amp;default-tab=js%2Cresult&amp;user=bvsscrvft&amp;embed-version=2&amp;pen-title=Glitchwar%20Sadat&amp;preview=true" scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="Glitchwar Sadat" class="cp_embed_iframe  cp_embed_wrapper" style="width: 100%; overflow: hidden;"></iframe>
-
-        <iframe id="cp_embed_yVMopr" src="https://codepen.io/bvsscrvft/embed/preview/yVMopr?height=265&amp;theme-id=0&amp;slug-hash=yVMopr&amp;default-tab=css%2Cresult&amp;user=bvsscrvft&amp;embed-version=2&amp;pen-title=Cut-Up%20Machine&amp;preview=true" scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="Cut-Up Machine" class="cp_embed_iframe cp_embed_wrapper" style="width: 100%; overflow: hidden;"></iframe>
-
-        <iframe id="cp_embed_rmMoWj" src="https://codepen.io/bvsscrvft/embed/preview/rmMoWj?height=265&amp;theme-id=0&amp;slug-hash=rmMoWj&amp;default-tab=css%2Cresult&amp;user=bvsscrvft&amp;embed-version=2&amp;pen-title=ToDoList&amp;preview=true" scrolling="no" frameborder="0" height="265" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="ToDoList" class="cp_embed_iframe  cp_embed_wrapper" style="width: 100%; overflow: hidden;"></iframe>
+        <div class="pens">
+        <main>
+            <li v-for="project in data" :key="project">
+                <p>{{project.title}}</p>
+                <app-child :details='project.details' :link='project.link'>
+                    <a :href="project.link" :key="project">
+                    <img :src='project.images.large' :key="project">
+                    </a>
+                </app-child>
+            </li>
+        </main>
         </div>
     </div>   
 </div>
@@ -18,34 +23,86 @@
     </template>
 
     <script>
+    import Child from './project-child.vue'
+    import axios from 'axios'
+    import VueAxios from 'vue-axios'
+    import Vue from 'vue'
+
+
+
 export default {
-        template: '#projects-component-template',
-        method: function () {
-            let reload = document.getElementByClassName(reload)
+    template: '#projects-component-template',
+    data() {
+        return {
+            data: []
         }
-    }    
+    },
+        components: {
+            appChild: Child
+        },
+        created() {
+            const api = 'https://cpv2api.com/pens/public/bvsscrvft'
+
+    Vue.use(VueAxios, axios)
+
+    Vue.axios.get(api)
+        .then((res) => {
+            this.data = res.data.data
+            console.log(this.data)
+        })
+        // .catch((err) => {
+        //     this.errMsg = "Uh oh, this is a ${err} error :("
+        //     this.data = []
+        //     console.log(this.errMsg)
+        //     next()
+        // })
+        },
+        methods: {
+    setData (res, err) {
+      if (err) {
+        this.error = err.toString()
+      } else {
+        this.res = res
+      }
+    }
+}
+}
 </script>
 
 <style>
+
 .projects {
-    background: #333333;
+    background: rgba(0, 29, 14, 0.6);
 }
 
-/*.projects-section ul {
+.pens ul {
     display: flex;
     flex-direction: row;
-    list-style: none;
     background: inherit;
     justify-content: space-between;
     margin: auto;
-}*/
+}
 
-/*.projects-section li {
-    text-decoration: none;
+.pens li {
+    list-style: none;
     background: inherit;
-    color: #f02c11;
-    border: solid 2px black;
-}*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.pens li > p {
+    font-size: 1.2em;
+}
+
+.projects-section > p {
+    font-size: 1.8em;
+}
+
+
+
+
 
 /*.cp_embed_wrapper {
     display: flex;
@@ -64,10 +121,6 @@ export default {
 /*.cp_embed_wrapper iframe {
     height: 100% !important;
 }*/
-
-.pens {
-    background: inherit;
-}
 </style>
 
 
