@@ -9,7 +9,16 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
+
         rules: [{
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    { loader: 'css-loader', options: { importLoaders: 1 } },
+                    'postcss-loader'
+                ]
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
@@ -31,7 +40,7 @@ module.exports = {
                 options: {
                     name: '[name].[ext]?[hash]'
                 }
-            }
+            },
         ]
     },
     resolve: {
