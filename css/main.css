@@ -26,6 +26,10 @@
     font-size: 0.9em;
 }
 
+.main-heading>a {
+    text-decoration: none;
+}
+
 .main-heading h1,
 nav {
     font-family: 'Exo 2', sans-serif;
@@ -61,10 +65,18 @@ body,
 .app {
     display: flex;
     flex-direction: column;
-    background-image: url(img/397989.jpg);
     /*background-size: 90% 100%;*/
     /*background-repeat: no-repeat;*/
     margin: 0;
+    background: url(img/397989.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -80,7 +92,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-bottom: 150%;
+    padding-bottom: 50%;
     padding-top: 0;
     color: ivory;
 }
