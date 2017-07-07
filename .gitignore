@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 .DS_Store
 node_modules/
 dist/
 npm-debug.log
-=======
-.DS_Store
-node_modules/
-dist/
-npm-debug.log
->>>>>>> 38967afa685b3c455f08cea058724b50c0dbe634
-.vscode
+

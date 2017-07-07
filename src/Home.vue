@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template id="home-component-template">
         <transition  name="custom-classes-transition" enter-active-class="animated fadeInLeft">
     <div>
@@ -42,41 +41,4 @@ export default {
 }
 </style>
 
-=======
-<template id="home-component-template">
-        <transition  name="custom-classes-transition" enter-active-class="animated fadeInLeft" leave-active-class="animated fadeOut" >
-    <div>
-        <div class="home">
-        <section class="home-section">
-        <transition  name="custom-classes-transition" enter-active-class="animated fadeDownBig" leave-active-class="animated fadeOut" >
-        <div>
-        <p>Hello, welcome to my Portfolio page. This page will house projects I work on and also be a testing ground for anything new and cool I want to try out. Thanks for checking it out!</p>
-        </div>
-        </transition>
-        </section>
-        </div>
-    </div>
-        </transition>
-</template>
-
-<script>
-export default {
-        template: '#home-component-template'
-        }    
-</script>
-
-<style>
-    .home {
-    background: rgba(13, 0, 54, 0.6);
-}
-
-.home p {
-    padding-top: 29%;
-    /*font-family: 'Inconsolata', monospace;*/
-    font-family: 'Share Tech Mono', monospace;
-    color: ivory;
-}
-</style>
-
->>>>>>> 38967afa685b3c455f08cea058724b50c0dbe634
     
