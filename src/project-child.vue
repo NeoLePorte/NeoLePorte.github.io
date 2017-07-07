@@ -1,12 +1,15 @@
 <template  id="overlay">
-    <transition name="custom-classes-transition" enter-active-class="animated bounceInUp" >
+    <transition name="custom-classes-transition" enter-active-class="animated bounceInUp">
+            <section class="project-section">
+                <p>{{this.title}}</p>
         <div class="img-contain">
-            <div class="overlay">
-    	        <p class="overlay-text" v-html="this.details"></p>
-                <a  target="_blank" :href="this.link"><div class="proj-link">View!</div></a>
+            <div class="overlay  hvr-overline-from-center hvr-underline-from-center">
+                <p class="overlay-text" v-html="this.details"></p>
+                <a  :href="this.link" target="_blank" rel="noopener noreferrer"><div class="overlay-bttn">View!</div></a>
             </div>
             <slot></slot> 
         </div>
+        </section>
     </transition>
 </template>
 
@@ -14,41 +17,11 @@
 
 export default {
         template: "#overlay",
-        props: ['details', 'link'],
-        // data() {
-        //     return {
-        //         isShowing: false
-        //     }
-        // },
-        // methods: {
-        //     toggleShow() {
-        //         this.isShowing = !this.isShowing;
-        //         }
-        //     }
+        props: ['details', 'link', 'title'],
 }
 </script>
 
 <style>
-.proj-link {
-    background: #c62735;
-    color: white;
-    border: 0;
-    padding: 5px 5px;
-    border-radius: 4px;
-    outline: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-left: 40%;
-}
-
-
-span,
-app-child,
-img,
-a {
-}
 
 img {
     width: 100%;
@@ -56,16 +29,22 @@ img {
     cursor: pointer;
     transform: scaleY(1) translateZ(0);
     margin: 5px;
+    border: solid 3px rgba(16, 9, 11, 0.8);
+    border-radius: 1%;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.project-section p {
+    align-self:center;
 }
+
 
 .img-contain {
+    display: flex;
+    flex-direction: column;
+    max-width: 333px;
+    max-height: 282px;
     overflow: hidden;
+    
 
 }
 
@@ -78,13 +57,14 @@ main {
     outline: 0;
     cursor: pointer;
     width: 20%;
-    margin-left: 40%;
+    margin: auto;
     text-decoration: none;
+
 }
 
 .img-contain:hover .overlay {
     opacity: 1;
-    background: rgba(13, 0, 0, 0.5);
+    background: rgba(13, 0, 0, 0.7);
     transition: 0.3s opacity ease-out;
 }
 
@@ -97,21 +77,48 @@ main {
     opacity: 0;
     overflow: hidden;
     transition: 0.3s opacity ease-in;
+    width: 333px;
+    height: 198px;
 }
 
 .overlay-text {
-    margin-top: 50px;
+    margin: 18px 10px;
+    font-size: 0.8em;
+    border-bottom: solid 2px rgba(16, 9, 11, 0.9);
+    border-top: solid 2px rgba(16, 9, 11, 0.9);
+    text-align: center;
+    
 }
 
-@media(min-width: 1600px) {
+.overlay-bttn {
+    background: #c62735;
+    color: white;
+    border: 0;
+    padding: 5px 5px;
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+}
+
+@media(min-width: 900px) {
     .overlay {
     width: 495px;
     height: 293px;
     }
 
+    .overlay-text {
+    margin-top: 50px;
+    font-size: 1em;
+    }
+
     .img-contain {
-    width: 500px;
-    height: 320px;
+    display: flex;
+    max-width: 500px;
+    max-height: 310px;
     }
 }
 </style>

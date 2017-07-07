@@ -8,8 +8,8 @@
                     <img v-if="show" src="css/img/me2.jpg" alt="Me thinking deeply...">
                 </transition>
                 </div>
-
-                <p>Hello, I am a Web Developer out of Louisville, Kentucky.
+                <div>
+                <p class="about-text">Hello, I am a Web Developer out of Louisville, Kentucky.
                     I work primarly with javascript (front-end/Back-end), and
                     various frameworks to make cool and useful things. <br>
 
@@ -17,6 +17,7 @@
                 and <a href="#/Contact">Contact me</a>
                 for any work opportunities or if you have any cool projects I could assist with.
                 </p>
+                </div>
             </section>
         </div>
     </div>
@@ -37,23 +38,32 @@ export default {
 
 <style>
 .about {
-background: rgba(26,27,37,0.7)
+background: rgba(26,27,37,0.7);
+min-height: 100vh;
 }
 
-.about-section > p {
+
+.about-text {
+    padding: 1em 0 1em 0;
     border-bottom: 2px solid ivory;
+    border-top: 2px solid ivory;
+    text-align: center;
 }
 .about-section {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
     padding-top: 5%;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 25px;
 }
 
 .pic-container {
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid ivory;
+    padding-bottom: 1em;
+
 }
 
 .pic-container img {
@@ -61,6 +71,17 @@ background: rgba(26,27,37,0.7)
     max-height: 35%;
     border-radius: 100%;
     align-self: center;
+}
+
+@media(min-width: 900px) {
+    .about {
+        max-height: 100vh;
+    }
+
+    .about-text {
+    margin-top: 15em;
+    padding: 1em 0 1em 0;
+    }
 }
 
 </style>
