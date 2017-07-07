@@ -17,13 +17,19 @@
   },
   "homepage": "https://github.com/NeoLePorte/NeoLePorte.github.io#readme",
   "dependencies": {
+<<<<<<< HEAD
     "aframe": "^0.5.0",
+=======
+>>>>>>> 38967afa685b3c455f08cea058724b50c0dbe634
     "axios": "^0.16.1",
     "babel-polyfill": "^6.23.0",
     "babel-runtime": "^6.23.0",
     "bluebird": "^3.5.0",
+<<<<<<< HEAD
     "three": "^0.86.0",
     "three-orbitcontrols": "^1.2.0",
+=======
+>>>>>>> 38967afa685b3c455f08cea058724b50c0dbe634
     "vue": "^2.3.2",
     "vue-axios": "^2.0.2",
     "vue-my-dropdown": "^2.0.4",
