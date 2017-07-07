@@ -101,7 +101,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding-bottom: 50%;
     padding-top: 0;
     color: ivory;
 }
@@ -162,7 +161,7 @@ body {
     color: inherit;
 }
 
-@media(min-width: 1600px) {
+@media(min-width: 900px) {
     .home-section,
     .projects-section,
     .about-section,

@@ -59,6 +59,7 @@ export default {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-flow: row wrap;
 }
 
@@ -82,16 +83,12 @@ export default {
         max-height:100vh;
     }
 
-    .pens li{
-        margin-left: 1em;
-    }
-
     .pens {
         justify-content: flex-start;
     }
 
-    .projets.section {
-        margin-bottom: 5em;
+    .pens li {
+        margin: auto 2em;
     }
 }
 </style>

@@ -11,7 +11,10 @@
                 <div>
                 <p class="about-text">Hello, I am a Web Developer out of Louisville, Kentucky.
                     I work primarly with javascript (front-end/Back-end), and
-                    various frameworks to make cool and useful things. <br>
+                    various frameworks to make cool and useful things. My profesional background is
+                    I.T. but I am trying to build out my skills to move towards working in Web Development
+                    profesionally.
+                     <br>
 
                 <br> Check out some of my <a href="#/Projects">Projects</a> 
                 and <a href="#/Contact">Contact me</a>
@@ -68,20 +71,17 @@ min-height: 100vh;
 
 .pic-container img {
     max-width: 35%;
-    max-height: 35%;
+    height: auto;
     border-radius: 100%;
     align-self: center;
 }
 
 @media(min-width: 900px) {
-    .about {
-        max-height: 100vh;
-    }
 
-    .about-text {
-    margin-top: 15em;
+    /*.about-text {
+    margin: auto;
     padding: 1em 0 1em 0;
-    }
+    }*/
 }
 
 </style>
