@@ -120,6 +120,11 @@ img {
     max-width: 500px;
     max-height: 310px;
     }
+
+    .project-section {
+        display: flex;
+        flex-direction: column;
+    }
 }
 </style>
 

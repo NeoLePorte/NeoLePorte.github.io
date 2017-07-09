@@ -90,7 +90,7 @@ export default {
     margin-top: 3em;
 }
 
-@media(min-width: 900px) {
+@media(min-width: 1550px) {
 
     .contact {
         max-height: 100vh;

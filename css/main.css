@@ -135,7 +135,6 @@ body {
 
 .main-footer {
     display: flex;
-    -webkit-flex-direction: row;
     flex-direction: row;
     border-top: 1px solid transparent;
     background: rgba(16, 9, 11, 0.8);

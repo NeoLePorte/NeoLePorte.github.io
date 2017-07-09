@@ -52,6 +52,7 @@ export default {
 .projects {
     background: rgba(0, 29, 14, 0.6);
     min-height:100vh;
+    padding: 3em 0 5em 0;
 }
 
 
@@ -71,25 +72,17 @@ export default {
     font-size: 1.8em;
 }
 
-.projects-section {
-    display: flex;
-    font-size: 24px;
-    margin: 0 auto;
-    padding: 25px;
-}
 
 @media(min-width: 900px) {
     .projects {
-        max-height:100vh;
+        padding-bottom: 13em;
     }
 
     .pens {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
-    .pens li {
-        margin: auto 2em;
-    }
+    
 }
 </style>
 
