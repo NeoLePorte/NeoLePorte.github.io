@@ -104,6 +104,10 @@ img {
     margin: auto;
 }
 
+.project-section > p {
+    font-size: 1.3em;
+}
+
 @media(min-width: 900px) {
     .overlay {
     width: 495px;
@@ -124,6 +128,12 @@ img {
     .project-section {
         display: flex;
         flex-direction: column;
+        background: rgba(16, 9, 11,0.5);
+        margin-right: 0;
+        padding: 0;
+        height: 97.5%;
+        align-self: center;
+    
     }
 }
 </style>

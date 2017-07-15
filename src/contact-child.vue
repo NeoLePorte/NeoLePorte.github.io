@@ -99,6 +99,7 @@ textarea {
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.06) inset;
   margin-bottom: 20px;
+  resize: none;
 }
 
 
@@ -138,10 +139,15 @@ label.light {
   display: inline;
 }
 
-@media(min-width: 900px) {
-    .contact-section {
-    }
 
+
+@media(min-width: 900px) {
+  .form-con {
+      order: 3;
+    }
+}
+
+@media(min-width: 1550px) {
     .form-show-btn {
       width: 346px;
     }

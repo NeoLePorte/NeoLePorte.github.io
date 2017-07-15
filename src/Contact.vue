@@ -39,7 +39,7 @@ export default {
 <style>
 
 .contact {
-    background: rgba(56, 0, 0, 0.6);
+    background: rgba(26,27,37,0.7);
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
 }
@@ -88,6 +88,20 @@ export default {
 .aframe {
     order: 3;
     margin-top: 3em;
+}
+
+@media(min-width: 900px) {
+    .social-section{
+        align-content: center;
+    }
+
+    .aframe {
+    order: 2;
+}
+
+    .social-icons {
+        order: 1;
+    }
 }
 
 @media(min-width: 1550px) {

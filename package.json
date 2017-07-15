@@ -1,51 +1,52 @@
 {
-    "name": "devcrvft-portfolio",
-    "version": "0.0.1",
-    "description": "Portfolio page",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/NeoLePorte/NeoLePorte.github.io.git"
-    },
-    "author": "Anthony Blanton",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/NeoLePorte/NeoLePorte.github.io/issues"
-    },
-    "homepage": "https://github.com/NeoLePorte/NeoLePorte.github.io#readme",
-    "dependencies": {
-        "aframe": "^0.5.0",
-        "axios": "^0.16.1",
-        "babel-polyfill": "^6.23.0",
-        "babel-runtime": "^6.23.0",
-        "bluebird": "^3.5.0",
-        "three": "^0.86.0",
-        "three-orbitcontrols": "^1.2.0",
-        "vue": "^2.3.2",
-        "vue-axios": "^2.0.2",
-        "vue-my-dropdown": "^2.0.4",
-        "vue-resource": "^1.3.1",
-        "vue-router": "^2.5.2",
-        "vue-scrollto": "^2.6.9",
-        "vue-sticky": "^3.1.5",
-        "vue-ui": "^0.1.3"
-    },
-    "devDependencies": {
-        "autoprefixer": "^7.1.1",
-        "babel-core": "^6.24.1",
-        "babel-loader": "^7.0.0",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-preset-env": "^1.5.0",
-        "css-loader": "^0.28.1",
-        "file-loader": "^0.11.1",
-        "postcss-loader": "^2.0.5",
-        "style-loader": "^0.18.1",
-        "vue-loader": "^12.0.3",
-        "vue-template-compiler": "^2.3.2",
-        "webpack": "^2.5.1",
-        "webpack-dev-server": "^2.4.5"
-    }
+  "name": "devcrvft-portfolio",
+  "version": "0.0.1",
+  "description": "Portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoLePorte/NeoLePorte.github.io.git"
+  },
+  "author": "Anthony Blanton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeoLePorte/NeoLePorte.github.io/issues"
+  },
+  "homepage": "https://github.com/NeoLePorte/NeoLePorte.github.io#readme",
+  "dependencies": {
+    "aframe": "^0.5.0",
+    "aframe-text-geometry-component": "^0.5.1",
+    "axios": "^0.16.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "bluebird": "^3.5.0",
+    "three": "^0.86.0",
+    "three-orbitcontrols": "^1.2.0",
+    "vue": "^2.3.2",
+    "vue-axios": "^2.0.2",
+    "vue-my-dropdown": "^2.0.4",
+    "vue-resource": "^1.3.1",
+    "vue-router": "^2.5.2",
+    "vue-scrollto": "^2.6.9",
+    "vue-sticky": "^3.1.5",
+    "vue-ui": "^0.1.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.0",
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.18.1",
+    "vue-loader": "^12.0.3",
+    "vue-template-compiler": "^2.3.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 }

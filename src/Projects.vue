@@ -2,15 +2,15 @@
     <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
         <div>
             <div class="projects">
-                <div class="pens">
-                    <li v-for="project in data" :key="project"> <!--renders list of projects pulled from codepen API-->
-                        <app-child :details='project.details' :link='project.link' :title='project.title'><!--uses overlay created in 'project-child' component-->
-                            <a :href="project.link" :key="project" :alt="project.name">
-                                <img :src="project.images.large" :key="project">
-                            </a>
-                        </app-child>
-                    </li>
-                </div>
+                    <div class="pens">
+                        <li v-for="project in data" :key="project"> <!--renders list of projects pulled from codepen API-->
+                            <app-child :details='project.details' :link='project.link' :title='project.title'><!--uses overlay created in 'project-child' component-->
+                                
+                                    <img :src="project.images.large" :key="project">
+                                
+                            </app-child>
+                        </li>
+                    </div>
             </div>   
         </div>
     </transition>
@@ -50,7 +50,7 @@ export default {
 
 <style>
 .projects {
-    background: rgba(0, 29, 14, 0.6);
+    background: rgba(26,27,37,0.7);
     min-height:100vh;
     padding: 3em 0 5em 0;
 }
@@ -68,12 +68,11 @@ export default {
     font-size: 1.2em;
 }
 
-.projects-section > p {
-    font-size: 1.8em;
-}
+
 
 
 @media(min-width: 900px) {
+    
     .projects {
         padding-bottom: 13em;
     }

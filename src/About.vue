@@ -11,14 +11,16 @@
                 <div>
                 <p class="about-text">Hello, I am a Web Developer out of Louisville, Kentucky.
                     I work primarly with javascript (front-end/Back-end), and
-                    various frameworks to make cool and useful things. My profesional background is
-                    I.T. but I am trying to build out my skills to move towards working in Web Development
-                    profesionally.
-                     <br>
+                    various frameworks to make cool and useful things. I do love learning though,
+                    so I have dabbled in various other languages as well.
+                    
+                    My professional background is in I.T. but I am trying to switch carreer paths 
+                    towards working in Web Development professionally.
+                <br>
 
                 <br> Check out some of my <a href="#/Projects">Projects</a> 
                 and <a href="#/Contact">Contact me</a>
-                for any work opportunities or if you have any cool projects I could assist with.
+                for any professional opportunities or if you have any cool projects I could assist with.
                 </p>
                 </div>
             </section>
@@ -47,17 +49,19 @@ min-height: 100vh;
 
 
 .about-text {
+    margin-top: 8px;
     padding: 1em 0 1em 0;
     border-bottom: 2px solid ivory;
     border-top: 2px solid ivory;
     text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
 }
 .about-section {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
-    padding-top: 5%;
-    font-size: 24px;
+    padding-top: 2%;
     margin: 0 auto;
     padding: 25px;
 }
@@ -72,16 +76,19 @@ min-height: 100vh;
 .pic-container img {
     max-width: 35%;
     height: auto;
-    border-radius: 100%;
+    border-radius: 50%;
     align-self: center;
 }
 
 @media(min-width: 900px) {
 
-    /*.about-text {
-    margin: auto;
-    padding: 1em 0 1em 0;
-    }*/
+    .about-text {
+    font-size: 20px;
+    }
+
+    .pic-container img {
+        max-width: 25%;
+    }
 }
 
 </style>
