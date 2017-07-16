@@ -4,6 +4,7 @@
         <transition name="custom-classes-transition" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutDown">
         <slot v-if="!isShowing"></slot>
             <div v-else class="form">
+            <!--uses formspree to handle contact form functionality-->
                 <form action="http://formspree.io/devcrvft@gmail.com" method="post">
                     <fieldset class='form'>
                         <label for="name">Name:</label>
