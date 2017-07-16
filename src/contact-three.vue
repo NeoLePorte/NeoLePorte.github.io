@@ -23,7 +23,7 @@
         text="color: white; align: center; value: Use WASD to move click+drag to look; width: 2">
       </a-entity>
 
-      <a-entity id="color"
+      <a-entity
           href="https://www.facebook.com/anthony.blanton.5"
           position="-2 2 -6"
           text-geometry="value: Contact Me; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; width: 6;"
@@ -85,11 +85,11 @@ export default {
     //     .start();
 
       // Animate color.
-      var color = document.getElementById('color');
-      setInterval(function() {
-        var randomHexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-        color.setAttribute('material', 'color', randomHexColor);
-      }, 10000);
+      // var color = document.getElementById('color');
+      // setInterval(function() {
+      //   var randomHexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+      //   color.setAttribute('material', 'color', randomHexColor);
+      // }, 10000);
 
       // Animate size.
       var size = document.getElementById('size');

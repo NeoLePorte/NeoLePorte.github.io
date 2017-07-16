@@ -9,9 +9,6 @@ import Child from './project-child.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-//gets codepen json data and sets the app data to the response
-
-
 //tells vue to use vue-router plugin
 Vue.use(VueRouter)
 
@@ -29,7 +26,7 @@ const routes = [
 const router = new VueRouter({
         name: router,
         routes, // short for routes: routes
-        scrollBehavior: (to, from, savedPosition) => {
+        scrollBehavior: (to, from, savedPosition) => { //saves scroll position with forward and back buttons
             if (savedPosition) {
                 return savedPosition
             } else {

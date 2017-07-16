@@ -30,12 +30,12 @@ export default {
     template: '#form',
     data() {
         return {
-            isShowing: false
+            isShowing: false //data used toggle contact form
         }
     },
         methods: {
         toggleShow() {
-            this.isShowing = !this.isShowing;
+            this.isShowing = !this.isShowing; //function for toggling contact form
             console.log("this is working")
         }
   }
@@ -44,7 +44,7 @@ export default {
 
 <style>
 
-
+/*==========form==========*/
 .form-show-btn {
     padding: 19px 39px 18px 39px;
     color: #FFF;
@@ -141,7 +141,7 @@ label.light {
 }
 
 
-
+/*==========media queries==========*/
 @media(min-width: 900px) {
   .form-con {
       order: 3;

@@ -18,8 +18,8 @@
                     towards working in Web Development professionally.
                 <br>
 
-                <br> Check out some of my <a href="#/Projects">Projects</a> 
-                and <a href="#/Contact">Contact me</a>
+                <br> Check out some of my <a class="hvr-underline-from-center" href="#/Projects">Projects</a> 
+                and <a class="hvr-underline-from-center" href="#/Contact">Contact me</a>
                 for any professional opportunities or if you have any cool projects I could assist with.
                 </p>
                 </div>
@@ -56,6 +56,11 @@ min-height: 100vh;
     text-align: center;
     line-height: 1.5;
     font-size: 16px;
+}
+
+.about-text a {
+    text-decoration: none;
+    color: #01cd74;
 }
 .about-section {
     display: flex;
