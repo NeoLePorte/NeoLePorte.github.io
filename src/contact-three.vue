@@ -26,7 +26,7 @@
       <a-entity
           href="https://www.facebook.com/anthony.blanton.5"
           position="-2 2 -6"
-          text-geometry="value: Contact Me; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; width: 6;"
+          text-geometry="value: Contact Me; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12;"
           material="color: #01cd74; metalness:0.8; roughness: 0.5;"
         ></a-entity>
 
