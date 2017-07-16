@@ -4,13 +4,13 @@
         <transition name="custom-classes-transition" enter-active-class="animated bounceInUp" leave-active-class="animated bounceOutDown">
         <slot v-if="!isShowing"></slot>
             <div v-else class="form">
-                <form action="index.html" method="post">
+                <form action="http://formspree.io/devcrvft@gmail.com" method="post">
                     <fieldset class='form'>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name">
+                        <input type="text" id="name" name="name">
                         
                         <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email">
+                        <input type="email" id="mail" name="email">
                     </fieldset>
                     
                     <fieldset>   
