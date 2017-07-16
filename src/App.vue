@@ -4,7 +4,7 @@
     <a href="#"><h1 class="hvr-bob">Anthony Blanton</h1></a>
         <nav>
             <!--  router-link component for navigation. -->
-            <router-link v-scroll-to="'body'" to="/#" class="hvr-underline-from-center">Home</router-link>
+            <router-link v-scroll-to="'body'" to="/" class="hvr-underline-from-center">Home</router-link>
             <router-link v-scroll-to="'body'" to="/projects" class="hvr-underline-from-center">Projects</router-link>
             <router-link v-scroll-to="'body'" to="/about" class="hvr-underline-from-center">About</router-link>
             <router-link v-scroll-to="'body'" to="/contact" class="hvr-underline-from-center">Contact</router-link>
