@@ -42,11 +42,7 @@
         geometry="primitive: box; width: 1; height: 1; depth: 1"
         position=" -2.2 1 -6" 
         material="color:white; src:css/img/facebook.jpg; metalness: 0.8;"
-        link="href:https://www.facebook.com/anthony.blanton.5"
         ></a-entity>
-
-       
-
 
         <a-entity
         geometry="primitive: box; width: 1; height: 1; depth: 1"

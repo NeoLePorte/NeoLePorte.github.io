@@ -7,10 +7,15 @@
                 <form-child></form-child>
                 <three class="aframe"></three>
                 <div class="social-icons">
-                    <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
-                    <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+
+                    <a href="https://www.facebook.com/anthony.blanton.5" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+
+                    <a href="https://www.linkedin.com/in/devcrvft/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+
+                    <a href="https://twitter.com/HPBVSSCRVFT?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+
+                    <a href="https://github.com/NeoLePorte" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+                    
                 </div>
             </div>
             </div>
@@ -56,16 +61,18 @@ export default {
     padding-top: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     order: 1;
+    
 }
 
-.social-icons i {
+.social-icons i, .social-icons a {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     cursor: pointer;
-
+    text-decoration: none;
+    color: ivory;
 }
 
 .social-icons i:before {
@@ -102,6 +109,8 @@ export default {
     .social-icons {
         order: 1;
     }
+
+    
 }
 
 @media(min-width: 1550px) {

@@ -84,6 +84,10 @@ body,
     min-height: 100vh;
 }
 
+.home {
+    background-image: url(img/IAOS.jpg) no-repeat center center fixed;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
