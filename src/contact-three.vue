@@ -73,9 +73,9 @@ export default {
     template: '#three',
     mounted() {
 
-    //     var opacity = document.getElementById('opacity');
-    //   var obj = {opacity: 0};
-    //   var tween = new AFRAME.TWEEN.Tween(obj)
+    //     let opacity = document.getElementById('opacity');
+    //   let obj = {opacity: 0};
+    //   let tween = new AFRAME.TWEEN.Tween(obj)
     //     .to({opacity: 1}, 500)
     //     .repeat( Infinity )
     //     .yoyo( true )
@@ -85,16 +85,16 @@ export default {
     //     .start();
 
       // Animate color.
-      // var color = document.getElementById('color');
+      // let color = document.getElementById('color');
       // setInterval(function() {
-      //   var randomHexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+      //   let randomHexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
       //   color.setAttribute('material', 'color', randomHexColor);
       // }, 10000);
 
       // Animate size.
-      var size = document.getElementById('size');
-      var objsize = {scale: 40};
-      var tween = new AFRAME.TWEEN.Tween(objsize)
+      let size = document.getElementById('size');
+      let objsize = {scale: 40};
+      let tween = new AFRAME.TWEEN.Tween(objsize)
         .to({scale: 30}, 1000)
         .repeat( Infinity )
         .yoyo( true )

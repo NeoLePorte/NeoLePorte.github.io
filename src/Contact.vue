@@ -66,13 +66,17 @@ export default {
     
 }
 
-.social-icons i, .social-icons a {
+.social-icons i{
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;
     cursor: pointer;
     text-decoration: none;
     color: ivory;
+}
+
+.social-icons a {
+    display: block;
 }
 
 .social-icons i:before {
@@ -126,7 +130,7 @@ export default {
         margin: 4em auto;
     }
 
-    .social-section i {
+    .social-section a {
         margin: 0 50% 0;
     }
     
@@ -137,8 +141,8 @@ export default {
         flex-direction: column;
     }
 
-    .social-icons i:last-child, .social-icons i:nth-child(2),
-    .social-icons i:nth-child(3) {
+    .social-icons a:last-child, .social-icons a:nth-child(2),
+    .social-icons a:nth-child(3) {
         margin-top: 1em;
     }
 
