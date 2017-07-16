@@ -10,17 +10,9 @@
           material="color: red"
         ></a-mixin>
 
-        <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+        <img src="css/img/grid.png" id="grid" crossorigin="anonymous">
         <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
       </a-assets>
-
-      <!--<a-entity mixin="marker" position="-2.5 0.7 0.01"></a-entity>-->
-      <!--<a-entity text-geometry="value: What's up" position="-2.5 0.7 0.01"
-        material="wireframe: true;"
-      ></a-entity>-->
-
-      <!--<a-entity mixin="marker" position="0 0.7 0.01"></a-entity>-->
-      
 
       <a-entity  position="0 2.9 0.01"
                 text="font: https://cdn.aframe.io/fonts/Exo2Bold.fnt; lineHeight: 50; letterSpacing: 5; color: white; align: center; value: Contact me for professional opportunities or just to say hi! I would love to hear from you either way.; width: 3.2">
@@ -32,7 +24,7 @@
       </a-entity>
 
       <a-entity id="color"
-          href="https://github.com/gasolin/aframe-href-component"
+          href="https://www.facebook.com/anthony.blanton.5"
           position="-2 2 -6"
           text-geometry="value: Contact Me; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; width: 6;"
           material="color: #01cd74; metalness:0.8; roughness: 0.5;"
@@ -63,8 +55,10 @@
         </a-entity>
 
       <a-entity
-        geometry="primitive: plane; width: 10000; height: 10000;" rotation="-90 0 0"
-        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4; sphericalEnvMap: #sky;"></a-entity>
+        geometry="primitive: plane; width: 10000; height: 10000;" 
+        rotation="-90 0 0"
+        material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4;">
+        </a-entity>
 
       <a-entity position="0 1.8 2">
         <a-entity camera look-controls wasd-controls></a-entity>
