@@ -17,9 +17,12 @@
     <footer class="main-footer">
         <div class="footer-icons">
             <a href="https://www.facebook.com/anthony.blanton.5" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
+
+            <a href="https://www.linkedin.com/in/devcrvft/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+
+            <a href="https://twitter.com/HPBVSSCRVFT?lang=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+
+            <a href="https://github.com/NeoLePorte" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
         </div>
     </footer>
 </div>
