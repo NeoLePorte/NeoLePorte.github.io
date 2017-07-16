@@ -61,7 +61,7 @@ export default {
     padding-top: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     order: 1;
     
 }
