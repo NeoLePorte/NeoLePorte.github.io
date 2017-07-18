@@ -52,6 +52,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 0.5em;
 }
 
 nav a {
@@ -153,7 +154,7 @@ body {
     flex-direction: row;
     align-content: space-between;
     justify-content: space-between;
-    margin: auto auto 0 auto;
+    margin: auto;
 }
 
 .footer-icons i {

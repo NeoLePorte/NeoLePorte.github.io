@@ -10,12 +10,11 @@
                 </div>
                 <div>
                 <p class="about-text">Hello, I am a Web Developer out of Louisville, Kentucky.
-                    I work primarly with javascript (front-end/Back-end), and
+                    I work primarily with JavaScript (front-end/Back-end), and
                     various frameworks to make cool and useful things. I do love learning though,
                     so I have dabbled in various other languages as well.
-                    
-                    My professional background is in I.T. but I am trying to switch carreer paths 
-                    towards working in Web Development professionally.
+                    My professional background is in I.T. but I am trying to switch career paths 
+                    towards working in Web development professionally.
                 <br>
 
                 <br> Check out some of my <a class="hvr-underline-from-center" href="#/Projects">Projects</a> 
