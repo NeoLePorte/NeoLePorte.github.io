@@ -43,7 +43,7 @@ export default {
 <style>
 .about {
 background: rgba(26,27,37,0.7);
-min-height: 100vh;
+min-height: 87.5vh
 }
 
 

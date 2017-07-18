@@ -23,22 +23,27 @@ export default {
 <style>
     .home {
     background: rgba(13, 0, 54, 0.6);
-    min-height:100vh; 
+    min-height: 100vh;
+    
 }
 
 .home-text {
     padding-top: 29%;
-    /*font-family: 'Inconsolata', monospace;*/
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Inconsolata', monospace;
+    /*font-family: 'Share Tech Mono', monospace;*/
     color: ivory;
     text-align: center;
 }
 
 @media(min-width: 900px) {
+    
+}
+@media(min-width: 1500px){
     .home {
-        max-height:100vh;
+        min-height: 87.5vh
     }
 }
+
 </style>
 
     
