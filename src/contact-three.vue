@@ -88,7 +88,7 @@
         material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4;">
         </a-entity>
 
-      <a-entity position="0 2.2 4">
+      <a-entity position="0 2.2 2">
         <a-entity camera look-controls wasd-controls>
           <a-entity position="0 0 -4"
                 geometry="primitive: ring; radiusOuter: 0.30;
