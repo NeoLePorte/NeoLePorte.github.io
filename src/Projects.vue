@@ -51,7 +51,7 @@ export default {
 <style>
 .projects {
     background: rgba(26,27,37,0.7);
-    min-height:100vh;
+    min-height: 87.5vh;
     padding: 3em 0 5em 0;
 }
 

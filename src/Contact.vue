@@ -46,7 +46,7 @@ export default {
 .contact {
     background: rgba(26,27,37,0.7);
     font-family: 'Nunito', sans-serif;
-    min-height: 100vh;
+    min-height: 87.5vh
 }
 
 .social-section {

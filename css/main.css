@@ -38,7 +38,7 @@ nav {
 }
 
 .main-heading h1 {
-    margin: 20px 20px 5px 10px;
+    margin: 20px 20px 5px 20px;
     color: #ff4e00;
 }
 
@@ -51,7 +51,7 @@ nav {
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 0.5em;
 }
 
@@ -61,28 +61,18 @@ nav a {
     font-size: 1.3em;
 }
 
-
-/*nav a:hover {
-    color: #ff4e00;
-}*/
-
-
 /*-----------------------------General---------------------------------------*/
 
 html,
-body,
 .app {
     display: flex;
     flex-direction: column;
-    /*background-size: 90% 100%;*/
-    /*background-repeat: no-repeat;*/
     margin: 0;
     background: url(img/397989.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100vh;
 }
 
 .home {
@@ -172,6 +162,11 @@ body {
     .contact-section {
         max-width: 50%;
     }
+
+    .main-heading h1 {
+        margin-left: 2em;
+    }
+
     nav {
         display: flex;
         margin-left: 0.2em;
@@ -179,17 +174,21 @@ body {
         justify-content: flex-start;
         flex-direction: row;
     }
+
     nav a {
         padding: 0.8rem;
         border: solid 2px transparent;
         margin: 0.5em;
     }
+
     nav a:last-child {
         margin-right: 2em;
     }
+
     .pens {
         margin-top: 6rem;
     }
+
     .hvr-underline-from-center {
         display: inline-block;
         vertical-align: middle;
