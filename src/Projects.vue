@@ -43,6 +43,7 @@ export default {
         Vue.axios.get(api)
             .then((res) => {
                 this.data = res.data.data
+                console.log(this.data)
                 })
             }
         }
