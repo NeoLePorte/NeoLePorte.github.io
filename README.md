@@ -7,8 +7,8 @@ and buld something useful at the same time.page routing is done with vue router,
 To run: 
 clone the project
 open project in editor of choice
-NPM install
-use http-server from console to run locally so aframe scene and codesplit bundles load correctly.
+"NPM install"
+use "http-server" from console to run locally so aframe scene and codesplit bundles load correctly.
 
 if you want to experiment with anything use "npm run build:dev" to bundle project.
 
