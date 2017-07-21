@@ -4,10 +4,15 @@
         <transition name="custom-classes-transition" enter-active-class="animated fadeIn">
         <div>
             <div class="social-section">
-                <form-child></form-child>
-                <three class="aframe"></three>
-                <div class="social-icons">
 
+            <!--contact form component-->
+                <form-child></form-child>
+
+                <!--aframe webvr scene-->
+                <three class="aframe"></three>
+
+                    <!--social icon wrapper-->
+                <div class="social-icons">
                     <a href="https://www.facebook.com/anthony.blanton.5" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
 
                     <a href="https://www.linkedin.com/in/devcrvft/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
@@ -32,17 +37,17 @@ import Three from './contact-three.vue'
 export default {
     template:'#contact-component-template',
     components: {
-        formChild: Child,
-        three: Three
+        formChild: Child,  //<--uses imported contact-child.vue
+        three: Three        //<--uses imported contact-three.vue
   },
   data() {
-    return { isShowing: false }
+    return { isShowing: false } //defaults isShowing property to false to hide on page load
     }
 }
 </script>
 
 <style>
-
+/*Contact-CSS*/
 .contact {
     background: rgba(26,27,37,0.7);
     font-family: 'Nunito', sans-serif;
@@ -78,7 +83,7 @@ export default {
 .social-icons a {
     display: block;
 }
-
+/*hover styling for icons*/
 .social-icons i:before {
     font-family: FontAwesome;
     -webkit-transform: translateZ(0);
@@ -94,13 +99,13 @@ export default {
 .social-icons i:active:before {
     color: #0F9E5E;
 }
-
+/*--------------------------------*/
 
 .aframe {
     order: 3;
     margin-top: 3em;
 }
-
+/*Order of elements change with resize*/
 @media(min-width: 900px) {
     .social-section{
         align-content: center;
@@ -117,17 +122,17 @@ export default {
     
 }
 
-@media(min-width: 1550px) {
+@media(min-width: 1300px) {
 
     .contact {
-        max-height: 100vh;
+        max-height: 84.4;
     }
     .social-section {
-        width: 78%;
+        width: 90%;
         height: 612px;
         flex-direction: row;
         justify-content: space-between;
-        margin: 4em auto;
+        margin: 2em auto;
     }
 
     .social-section a {

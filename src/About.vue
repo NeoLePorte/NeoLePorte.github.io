@@ -43,13 +43,13 @@ export default {
 <style>
 .about {
 background: rgba(26,27,37,0.7);
-min-height: 87.5vh
+min-height: 100vh
 }
 
 
 .about-text {
     margin-top: 8px;
-    padding: 1em 0 1em 0;
+    padding: 1em 0 0 0;
     border-bottom: 2px solid ivory;
     border-top: 2px solid ivory;
     text-align: center;
@@ -85,7 +85,9 @@ min-height: 87.5vh
 }
 
 @media(min-width: 900px) {
-
+    .about {
+        min-height: 84.4vh
+    }
     .about-text {
     font-size: 20px;
     }

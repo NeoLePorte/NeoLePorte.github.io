@@ -55,6 +55,13 @@ module.exports = {
             'vue$': 'vue/dist/vue.min'
         }
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: '"development"'
+            }
+        })
+    ],
     devServer: {
         historyApiFallback: true,
         noInfo: true,
@@ -67,5 +74,5 @@ module.exports = {
     performance: {
         hints: false
     },
-    devtool: '#eval-source-map'
+    devtool: '#eval-source-map',
 }

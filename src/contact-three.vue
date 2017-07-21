@@ -3,7 +3,7 @@
         <section class="three-section">
             <a-scene embedded >
       <a-assets>
-
+<!--mixins. some for later use-->
         <a-mixin
           id="marker"
           geometry="primitive: plane; width: 0.02; height: 0.02"
@@ -22,15 +22,17 @@
         <a-mixin id="boldFont" text="font: #optimerBoldFont"></a-mixin>
       </a-assets>
 
+
+<!--contact me text in aframe scene-->
       <a-entity  position="0 2.9 0.01"
                 text="font: https://cdn.aframe.io/fonts/Exo2Bold.fnt; lineHeight: 50; letterSpacing: 5; color: white; align: center; value: Contact me for professional opportunities or just to say hi! I would love to hear from you either way.; width: 3.2">
       </a-entity>
-
-      <!--<a-entity mixin="marker" position="-2.5 0.7 0.01"></a-entity>-->
+<!--scaling instructions. using animate component declared below-->
       <a-entity id="size" position="0 0.7 0.01"
         text="color: white; align: center; value: Use WASD to move click+drag to look; width: 2">
       </a-entity>
 
+<!--floating contact me above cubes. using metalness and roughness material to refract ambiant light-->
       <a-entity position="-2 2 -6">
           <a-entity
           text-geometry="value: Contact Me; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12;"
@@ -38,6 +40,7 @@
           </a-entity>
         </a-entity>
 
+<!--social cubes/links. aframe animate component spins cubes on click-->
     <a-entity position=" -2.2 1 -6">
       <a-entity
         onClick="location.href='https://www.facebook.com/anthony.blanton.5'"
@@ -81,13 +84,17 @@
         </a-animation>
       </a-entity>
     </a-entity>
+<!--////////////////////////////////////-->
 
+<!--floor geometry-->
       <a-entity
         geometry="primitive: plane; width: 10000; height: 10000;" 
         rotation="-90 0 0"
         material="src: #grid; repeat: 10000 10000; transparent: true;metalness:0.6; roughness: 0.4;">
         </a-entity>
 
+
+<!--camera and cursor entities. cursor user raycastor to listen for  "click" evens on intersection with an entity-->
       <a-entity position="0 2.2 2">
         <a-entity camera look-controls wasd-controls>
           <a-entity position="0 0 -4"
@@ -112,25 +119,7 @@ export default {
     template: '#three',
     mounted() {
 
-    //     let opacity = document.getElementById('opacity');
-    //   let obj = {opacity: 0};
-    //   let tween = new AFRAME.TWEEN.Tween(obj)
-    //     .to({opacity: 1}, 500)
-    //     .repeat( Infinity )
-    //     .yoyo( true )
-    //     .onUpdate(function () {
-    //       opacity.setAttribute('text', 'opacity', obj.opacity);
-    //     })
-    //     .start();
-
-      // Animate color.
-      // let color = document.getElementById('color');
-      // setInterval(function() {
-      //   let randomHexColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-      //   color.setAttribute('material', 'color', randomHexColor);
-      // }, 10000);
-
-      // Animate size.
+      // Animate size. users aframes animate component to scale the object up and down.
       let size = document.getElementById('size');
       let objsize = {scale: 40};
       let tween = new AFRAME.TWEEN.Tween(objsize)
