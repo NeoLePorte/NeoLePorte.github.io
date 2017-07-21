@@ -14,3 +14,5 @@ if you want to experiment with anything use "npm run build:dev" to bundle projec
 Or
 
 go to: anthonyblanton.me
+
+**works on everything but IE at the moment. working on it ¯\_(ツ)_/¯**
