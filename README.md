@@ -10,7 +10,7 @@ open project in editor of choice
 "NPM install"
 use "http-server" from console to run locally so aframe scene and codesplit bundles load correctly.
 
-if you want to experiment with anything use "npm run build:dev" to bundle project.
+if you want to experiment with anything use "npm run build:dev" to bundle project and just use http-server if you have node.
 
 Or
 
