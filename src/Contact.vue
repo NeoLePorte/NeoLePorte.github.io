@@ -71,7 +71,7 @@ export default {
     
 }
 
-.social-icons i{
+.social-icons i {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px transparent;

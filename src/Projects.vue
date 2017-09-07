@@ -43,7 +43,6 @@ export default {
         Vue.axios.get(api)
             .then((res) => {
                 this.data = res.data.data
-                console.log(this.data)
                 })
             }
         }
@@ -60,7 +59,7 @@ export default {
 .pens{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     flex-flow: row wrap;
 }

@@ -17,7 +17,7 @@
                     towards working in Web development professionally.
                 <br>
 
-                <br> Check out some of my <a class="hvr-underline-from-center" href="#/Projects">Projects</a> 
+                <br> Check out some of my <a class="hvr-underline-from-center" href="#/Projects">Projects</a> / <a class="hvr-underline-from-center" href="https://github.com/NeoLePorte" target="_blank" rel="noopener noreferrer">Github</a>  
                 and <a class="hvr-underline-from-center" href="#/Contact">Contact me</a>
                 for any professional opportunities or if you have any cool projects I could assist with.
                 </p>

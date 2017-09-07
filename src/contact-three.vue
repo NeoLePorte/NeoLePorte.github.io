@@ -94,7 +94,7 @@
         </a-entity>
 
 
-<!--camera and cursor entities. cursor user raycastor to listen for  "click" evens on intersection with an entity-->
+<!--camera and cursor entities. cursor uses raycastor to listen for  "click" events on intersection with an entity-->
       <a-entity position="0 2.2 2">
         <a-entity camera look-controls wasd-controls>
           <a-entity position="0 0 -4"
@@ -119,7 +119,7 @@ export default {
     template: '#three',
     mounted() {
 
-      // Animate size. users aframes animate component to scale the object up and down.
+      // Animate size. uses aframes animate component to scale the object up and down.
       let size = document.getElementById('size');
       let objsize = {scale: 40};
       let tween = new AFRAME.TWEEN.Tween(objsize)
