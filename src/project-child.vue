@@ -129,11 +129,11 @@ img {
         display: flex;
         flex-direction: column;
         background: rgba(16, 9, 11,0.5);
-        margin-left: 1.4em;
+        margin-left: 1.3em;
         padding: 0;
         height: 97.5%;
         align-self: center;
-    
+        border: solid 4px rebeccapurple;
     }
 }
 </style>
