@@ -129,7 +129,7 @@ img {
         display: flex;
         flex-direction: column;
         background: rgba(16, 9, 11,0.5);
-        margin-right: 0;
+        margin-left: 1.4em;
         padding: 0;
         height: 97.5%;
         align-self: center;

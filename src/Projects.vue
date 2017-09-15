@@ -73,7 +73,7 @@ export default {
 
 @media(min-width: 900px) {
     .pens {
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     
