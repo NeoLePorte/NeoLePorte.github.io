@@ -73,7 +73,7 @@ export default {
 
 @media(min-width: 900px) {
     .pens {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     
