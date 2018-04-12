@@ -21,6 +21,8 @@ import Child from './project-child.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Vue from 'vue'
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 
 
 

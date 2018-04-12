@@ -10,10 +10,15 @@
             <router-link v-scroll-to="'body'" to="/contact" class="hvr-underline-from-center">Contact</router-link>
         </nav>
     </header>
+    <vue-particles 
+    color="#b342f4" 
+    linesColor="#ff4e00"
+    :linesWidth="3"
+    shapeType="polygon">
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
+    </vue-particles>
     <router-view></router-view>
-
     <footer class="main-footer">
         <div class="footer-icons">
             <a href="https://www.facebook.com/anthony.blanton.5" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
@@ -25,6 +30,7 @@
             <a href="https://github.com/NeoLePorte" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
         </div>
     </footer>
+    
 </div>
 </template>
 

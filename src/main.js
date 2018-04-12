@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import App from './App.vue'
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 
 //async components 
 const Home = () =>

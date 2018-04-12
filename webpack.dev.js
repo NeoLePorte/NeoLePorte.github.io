@@ -6,7 +6,7 @@ module.exports = {
     output: {
         // path: path.resolve(__dirname, '/'),
         publicPath: '/',
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
     module: {
 
@@ -35,7 +35,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/,
+                include:[path.resolve('src'), path.resolve('test'), path.resolve('/node_modules/vue-particles')],
                 options: {
                     presets: ["env"],
                     plugins: ["babel-plugin-syntax-dynamic-import"]
@@ -64,7 +64,6 @@ module.exports = {
     ],
     devServer: {
         historyApiFallback: true,
-        noInfo: true,
         port: 7777,
         host: 'localhost',
         historyApiFallback: true,

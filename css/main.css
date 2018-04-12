@@ -6,6 +6,11 @@
 
 
 /*---------heading/nav-------*/
+.particles-js-canvas-el {
+    z-index: -1000;
+    position: fixed;
+}
+
 
 .main-heading {
     display: -webkit-box;
