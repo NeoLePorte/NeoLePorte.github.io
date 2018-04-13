@@ -35,6 +35,8 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
+                include: [path.resolve('src'), path.resolve('test'), path.resolve('node_modules/vue-particles'), path.resolve('node_modules/vue-sticky'), path.resolve('node_modules/vue-scrollto'),
+            path.resolve('node_modules/vue-scrollto')],
                 exclude: /node_modules/,
                 options: {
                     presets: ["env"],

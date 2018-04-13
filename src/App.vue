@@ -1,20 +1,31 @@
 <template>
 <div id="app">
     <header class="main-heading"  v-sticky="{ zIndex: 1001, stickyTop: 1 }">
-    <a href="#"><h1 class="hvr-bob">Anthony Blanton</h1></a>
+    <a href="/"><h1 class="hvr-bob">Anthony Blanton</h1></a>
         <nav>
             <!--  router-link component for navigation. -->
             <router-link v-scroll-to="'body'" to="/" class="hvr-underline-from-center">Home</router-link>
-            <router-link v-scroll-to="'body'" to="/projects" class="hvr-underline-from-center">Projects</router-link>
+            <div class="dropdown">
+                    <router-link v-scroll-to="'body'" to="" class="hvr-underline-from-center ">Projects
+                        <i class="fa fa-caret-down"></i>
+                    </router-link>
+                <div class="dropdown-content">
+                    <router-link v-scroll-to="'body'" to="/github-projects" class="hvr-underline-from-center">Github</router-link>
+                    <router-link v-scroll-to="'body'" to="/projects" class="hvr-underline-from-center">Code Pen</router-link>
+                </div>
+            </div>
             <router-link v-scroll-to="'body'" to="/about" class="hvr-underline-from-center">About</router-link>
             <router-link v-scroll-to="'body'" to="/contact" class="hvr-underline-from-center">Contact</router-link>
         </nav>
     </header>
+
     <vue-particles 
     color="#b342f4" 
     linesColor="#ff4e00"
     :linesWidth="3"
-    shapeType="polygon">
+    shapeType="polygon"
+    :moveSpeed="3">
+    
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     </vue-particles>
@@ -55,7 +66,3 @@ export default {
         
     }    
 </script>
-
-<style>
-    
-</style>

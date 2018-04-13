@@ -35,7 +35,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include:[path.resolve('src'), path.resolve('test'), path.resolve('/node_modules/vue-particles')],
+                include:[path.resolve('src'), path.resolve('test'), path.resolve('/node_modules/vue-particles'), path.resolve('/node_modules/vue-sticky'), path.resolve('/node_modules/vue-scrollto')],
                 options: {
                     presets: ["env"],
                     plugins: ["babel-plugin-syntax-dynamic-import"]

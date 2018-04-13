@@ -7,7 +7,7 @@
                 <p class="overlay-text" v-html="this.details"></p>
                 <a  :href="this.link" target="_blank" rel="noopener noreferrer"><div class="overlay-bttn">View!</div></a>
             </div>
-            <slot></slot> 
+            <slot></slot>
         </div>
         </section>
     </transition>
@@ -111,7 +111,7 @@ img {
 @media(min-width: 900px) {
     .overlay {
     width: 495px;
-    height: 293px;
+    height: 294px;
     }
 
     .overlay-text {

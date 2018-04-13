@@ -11,6 +11,8 @@ const Home = () =>
     import ('./Home.vue')
 const Projects = () =>
     import ('./Projects.vue')
+    const GithubProjects = () =>
+    import ('./Github-Projects.vue')
 const About = () =>
     import ('./About.vue')
 const Contact = () =>
@@ -24,6 +26,7 @@ Vue.use(VueRouter)
 const routes = [
     { path: '/', component: Home },
     { path: '/projects', component: Projects, },
+    { path: '/github-projects', component: GithubProjects, },
     { path: '/about', component: About },
     { path: '/contact', component: Contact }
 ]

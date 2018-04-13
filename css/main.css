@@ -4,11 +4,55 @@
     box-sizing: border-box;
 }
 
-
-/*---------heading/nav-------*/
 .particles-js-canvas-el {
     z-index: -1000;
     position: fixed;
+}
+
+/*---------heading/nav-------*/
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(16, 9, 11, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.git-image  {
+    width: 500px;
+    height: 298.97px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #01cd74;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
