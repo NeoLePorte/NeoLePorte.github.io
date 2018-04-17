@@ -34,18 +34,6 @@ export default {
     color: ivory;
     text-align: center;
 }
-
-@media(min-width: 900px) {
-    .home {
-        min-height: 100vh
-    }
-}
-@media(min-width: 1500px){
-    .home {
-        min-height: 100vh
-    }
-}
-
 </style>
 
     
