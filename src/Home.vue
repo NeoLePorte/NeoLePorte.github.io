@@ -36,7 +36,9 @@ export default {
 }
 
 @media(min-width: 900px) {
-    
+    .home {
+        min-height: 100vh
+    }
 }
 @media(min-width: 1500px){
     .home {
