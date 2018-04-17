@@ -5,7 +5,7 @@
             <section class="about-section">
                 <div class="pic-container">
                 <transition  name="custom-classes-transition" enter-active-class="animated rollIn">
-                    <img v-if="show" src="css/img/me2.jpg" alt="Me thinking deeply...">
+                    <img v-if="show" src="css/img/me2.png" alt="Me thinking deeply...">
                 </transition>
                 </div>
                 <div>
