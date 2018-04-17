@@ -75,6 +75,7 @@ min-height: 100vh
     flex-direction: column;
     padding-bottom: 1em;
 
+
 }
 
 .pic-container img {
@@ -82,6 +83,9 @@ min-height: 100vh
     height: auto;
     border-radius: 50%;
     align-self: center;
+    border-color: #639;
+    border-width: 4px;
+    border-style: solid;
 }
 
 @media(min-width: 900px) {
