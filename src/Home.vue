@@ -40,7 +40,7 @@ export default {
 }
 @media(min-width: 1500px){
     .home {
-        min-height: 84.4vh
+        min-height: 100vh
     }
 }
 

@@ -86,7 +86,7 @@ min-height: 100vh
 
 @media(min-width: 900px) {
     .about {
-        min-height: 84.4vh
+        min-height: 100vh
     }
     .about-text {
     font-size: 20px;
