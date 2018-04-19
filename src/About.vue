@@ -11,8 +11,7 @@
                 <div>
                 <p class="about-text">Hello, I am a Web Developer out of Louisville, Kentucky.
                     I work primarily with JavaScript (front-end/Back-end), and
-                    various frameworks to make cool and useful things. I do love learning though,
-                    so I have dabbled in various other languages as well.
+                    various frameworks to make cool and useful things. I have dabbled in various other languages as well. I love learning and exlporing new ideas, so new challenges and oppertunites excite me.
                     My professional background is in I.T. but I am trying to switch career paths 
                     towards working in Web development professionally.
                 <br>
