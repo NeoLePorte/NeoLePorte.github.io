@@ -16,4 +16,4 @@ Or
 
 go to: anthonyblanton.me
 
-**works on everything but IE at the moment. working on it ¯\_(ツ)_/¯**
+**works on everything even IE!(excluding webVR scene)**

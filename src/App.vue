@@ -50,11 +50,12 @@ import Vue from 'vue'
 import VueScrollTo from 'vue-scrollto'
 import VueSticky from 'vue-sticky'
 
+
 //scrolls to top of body when route changes
 Vue.use(VueScrollTo, {
     duration: 1
 })
-
+Vue.use(VueSticky)
 export default {
      directives: {
         'sticky': VueSticky, //sticks header to top of view

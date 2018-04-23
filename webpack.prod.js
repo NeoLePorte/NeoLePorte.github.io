@@ -28,16 +28,22 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                    loaders: {}
+                    loaders: {
+                        js: {
+                            loader: 'babel-loader',
+                            options: {
+                                presets: ['env']
+                            }
+                        }
+                    }
                 }
             },
 
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include: [path.resolve('src'), path.resolve('test'), path.resolve('node_modules/vue-particles'), path.resolve('node_modules/vue-sticky'), path.resolve('node_modules/vue-scrollto'),
-            path.resolve('node_modules/vue-scrollto')],
-                exclude: /node_modules/,
+                include: [path.resolve('src'), path.resolve('test'), require.resolve('vue-particles'), require.resolve('vue-sticky'), require.resolve('vue-scrollto'),
+                require.resolve('vue-scrollto')],
                 options: {
                     presets: ["env"],
                     plugins: ["babel-plugin-syntax-dynamic-import"]

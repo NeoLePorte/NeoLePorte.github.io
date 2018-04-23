@@ -12,7 +12,8 @@ module.exports = {
 
         rules: [{
                 test: /\.css$/,
-                use: [{
+                use: [
+                    {
                         loader: 'style-loader'
                     },
                     {
@@ -20,7 +21,8 @@ module.exports = {
                         options: { importLoaders: 1 }
                     },
                     {
-                        loader: 'postcss-loader'
+                        loader: 'postcss-loader',
+                        plugins: 'autoprefixer'
                     }
                 ]
             },
@@ -35,7 +37,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include:[path.resolve('src'), path.resolve('test'), path.resolve('/node_modules/vue-particles'), path.resolve('/node_modules/vue-sticky'), path.resolve('/node_modules/vue-scrollto')],
+                include:[path.resolve('src'), path.resolve('test'), require.resolve('/node_modules/vue-particles'), require.resolve('/node_modules/vue-sticky'), require.resolve('/node_modules/vue-scrollto')],
                 options: {
                     presets: ["env"],
                     plugins: ["babel-plugin-syntax-dynamic-import"]

@@ -152,6 +152,7 @@ body {
 .home-section,
 .contact-section {
     display: flex;
+    align-self: center;
     font-size: 24px;
     margin: 0 auto;
     padding: 25px;
