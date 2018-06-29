@@ -22,7 +22,6 @@ module.exports = {
                     },
                     {
                         loader: 'postcss-loader',
-                        plugins: 'autoprefixer'
                     }
                 ]
             },
@@ -37,7 +36,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: 'babel-loader',
-                include:[path.resolve('src'), path.resolve('test'), require.resolve('/node_modules/vue-particles'), require.resolve('/node_modules/vue-sticky'), require.resolve('/node_modules/vue-scrollto')],
+                include:[path.resolve('src'), path.resolve('test'), require.resolve('vue-particles'), require.resolve('vue-sticky'), require.resolve('vue-scrollto')],
                 options: {
                     presets: ["env"],
                     plugins: ["babel-plugin-syntax-dynamic-import"]

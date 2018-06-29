@@ -1,19 +1,19 @@
 <template id="projects-component-template">
-    <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
-        <div>
-            <div class="projects">
-                    <div class="pens">
-                        <li v-for="project in data" :key="project"> <!--renders list of projects pulled from codepen API-->
-                            <app-child :details='project.details' :link='project.link' :title='project.title'><!--uses overlay created in 'project-child' component-->
-                                
-                                    <img :src="project.images.large" :key="project">
-                                
-                            </app-child>
-                        </li>
-                    </div>
-            </div>   
+<transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
+<div>
+    <div class="projects">
+        <div class="pens">
+            <li v-for="project in data" :key="project"> <!--renders list of projects pulled from codepen API-->
+                <app-child :details='project.details' :link='project.link' :title='project.title'><!--uses overlay created in 'project-child' component-->
+                    
+                        <img :src="project.images.large" :key="project">
+                    
+                </app-child>
+            </li>
         </div>
-    </transition>
+    </div>   
+</div>
+</transition>
 </template>
 
 <script>
@@ -59,9 +59,10 @@ export default {
 
 
 .pens{
+    margin-top: 6rem;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
     flex-flow: row wrap;
 }

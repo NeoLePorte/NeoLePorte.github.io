@@ -51,7 +51,8 @@ export default {
 .contact {
     background: rgba(26,27,37,0.7);
     font-family: 'Nunito', sans-serif;
-    min-height: 87.5vh
+    min-height: 87.5vh;
+    order: 2;
 }
 
 .social-section {
@@ -113,7 +114,7 @@ export default {
 
     .aframe {
     order: 2;
-}
+    }
 
     .social-icons {
         order: 1;
@@ -126,6 +127,7 @@ export default {
 
     .contact {
         max-height: 84.4;
+        order: 1;
     }
     .social-section {
         width: 90%;
@@ -133,11 +135,12 @@ export default {
         flex-direction: row;
         justify-content: space-between;
         margin: 2em auto;
+        
     }
 
-    .social-section a {
+    /* .social-section a {
         margin: 0 50% 0;
-    }
+    } */
     
     .social-icons {
         align-self: space-around;
@@ -152,7 +155,6 @@ export default {
     }
 
     .aframe {
-        order: 2;
         margin-top: auto;
     }
 }

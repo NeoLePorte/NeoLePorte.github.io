@@ -1,19 +1,19 @@
 <template id="projects-component-template">
-    <transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
-        <div>
-            <div class="projects">
-                    <div class="pens">
-                        <li v-for="project in data" :key="project.owner.id"> <!--renders list of projects pulled from codepen API-->
-                            <app-child :details='project.description' :link='project.html_url' :title='project.name'><!--uses overlay created in 'project-child' component-->
+<transition name="custom-classes-transition" enter-active-class="animated fadeInRight" > 
+<div>
+    <div class="projects">
+        <div class="pens">
+            <li v-for="project in data" :key="project.owner.id"> <!--renders list of projects pulled from codepen API-->
+                <app-child :details='project.description' :link='project.html_url' :title='project.name'><!--uses overlay created in 'project-child' component-->
 
-                                    <img class='git-image' :src='url' :key="project.owner.id">
+                        <img class='git-image' :src='project.homepage? project.homepage: url' :key="project.owner.id">
 
-                            </app-child>
-                        </li>
-                    </div>
-            </div>   
+                </app-child>
+            </li>
         </div>
-    </transition>
+    </div>   
+</div>
+</transition>
 </template>
 
 <script>
@@ -42,7 +42,9 @@ export default {
         Vue.axios.get(api)
             .then((res) => {
                 this.data = res.data
+                console.log(this.data)
                 })
+                
             }
         }
 </script>
