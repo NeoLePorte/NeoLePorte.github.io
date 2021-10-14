@@ -12,8 +12,5 @@ use "http-server" from console to run locally so aframe scene and codesplit bund
 
 if you want to experiment with anything use "npm run build:dev" to bundle project.
 
-Or
-
-go to: https://www.anthonyblanton.com
 
 **works on everything even IE!(excluding webVR scene)**
