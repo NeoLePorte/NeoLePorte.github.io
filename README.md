@@ -14,6 +14,6 @@ if you want to experiment with anything use "npm run build:dev" to bundle projec
 
 Or
 
-go to: anthonyblanton.me
+go to: anthonyblanton.com
 
 **works on everything even IE!(excluding webVR scene)**
