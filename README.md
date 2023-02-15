@@ -2,7 +2,7 @@
 WebDev Portfolio
 
 This is my portfolio made to hold projects I work on. Built with Vue.js as a way to get to know the vue framework/webpack
-and buld something useful at the same time.page routing is done with vue router,  Axios for the api calls for the codepen data used in the projects page, and aframe for the webvr scene in the contacts page. there are a few bugs but its fully functional.
+and buld something useful at the same time.page routing is done with vue router,  Axios for the api calls for the codepen data used in the projects page, and aframe for the webvr scene in the contacts page.
 
 To run: 
 clone the project
